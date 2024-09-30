@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C9F9FC;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(241, 194, 6);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.game {
+    display: flex;
+    padding: 70px 0px 20px 0px;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.allbtn {
+    gap: 20px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 20px solid black;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: #C9F9FC;
+    border: 6px solid black;
+    font-size: 137px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 27px;
+    color: black;
+}
+
+.reset-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-btn button {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #C9F9FC;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    border: 10px solid black;
+    font-size: 30px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 20px;
+}
+
+.reset-btn button:hover {
+    margin-top: 30px;
+    background-color: black;
+    color: #C9F9FC;
+}
+
+.winr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.winr h3 {
+
+    text-align: center;
+    font-size: 60px;
+    padding: 5px 0px;
+}
+
+.hide{
+    display: none;
+}
