@@ -100,3 +100,44 @@
 .hide{
     display: none;
 }
+
+@media only screen and (max-width:768px) {
+    .allbtn {
+        gap: 8px;
+    }
+}
+@media only screen and (max-width:568px) {
+    .btn {
+        width: 137px;
+        height: 137px;
+
+    }
+    .allbtn{
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+    }
+}
+@media only screen and (max-width:528px){
+    .btn {
+        width: 126px;
+        height: 126px;
+    }
+    .allbtn{
+        padding: 15px 0px 15px 0px;
+    }
+}
+@media only screen and (max-width:470px){
+    .navbar{
+        gap: 6px;
+        padding:15px 0px  15px 0px;
+        flex-wrap: wrap;
+    }
+    .allbtn {
+        height: 375px;
+        margin: 0;
+    }.btn {
+        width: 111px;
+        height: 111px;
+    }
+
+}
