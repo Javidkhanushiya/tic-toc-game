@@ -112,12 +112,7 @@ let allanebale = () => {
 let sowwintex = (winev) => {
     winh3.innerText = `winner is "${winev}"`
     windiv.classList.remove("hide")
-
-
-
 }
-
-
 
 newgame.addEventListener("click", reset)
 
