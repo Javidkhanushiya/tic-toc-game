@@ -1,5 +1,5 @@
 let allbtn = document.querySelectorAll(".btn");
-// console.log(allbtn);
+
 
 let windiv = document.querySelector(".winr")
 let newgaembtn = document.querySelector(".nwe-game-btn")
@@ -52,9 +52,7 @@ resetgaem.addEventListener("click", () => {
 
 
 allbtn.forEach((btns) => {
-    // console.log(btns);
     btns.addEventListener("click", () => {
-        // console.log("clikd");
         if (turn === true) {
             btns.innerText = "o"
             turn = false
@@ -86,7 +84,6 @@ let chekwinner = () => {
         console.log(valu1, valu2, valu3);
         if (valu1 != "" & valu2 != "" && valu3 != "") {
             if (valu1 === valu2 && valu2 === valu3) {
-                // console.log("winner")
                 sowwintex(valu1)
                 allbtndeseble()
 
@@ -121,6 +118,6 @@ let sowwintex = (winev) => {
 }
 
 
-// resetgaem.addEventListener("click" , restinggame);
+
 newgame.addEventListener("click", reset)
 
