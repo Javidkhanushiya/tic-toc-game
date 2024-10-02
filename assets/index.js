@@ -1,7 +1,7 @@
 let allbtn = document.querySelectorAll(".btn");
 // console.log(allbtn);
 
-let windiv = document.querySelector(".winr") 
+let windiv = document.querySelector(".winr")
 let newgaembtn = document.querySelector(".nwe-game-btn")
 let winh3 = document.querySelector(".winh3")
 
@@ -26,13 +26,28 @@ let winnerchak = [
     [2, 4, 6]
 ]
 
+
+
+
 const reset = () => {
     turn = true;
     allanebale()
-    // allbtn.innerText = "";
+    allbtn.innerText = "";
     windiv.classList.add("hide")
 
 }
+
+resetgaem.addEventListener("click", () => {
+    for (let btns of allbtn) {
+        turn = true;
+        btns.innerText = "";
+        allanebale()
+        windiv.classList.add("hide")
+
+        
+
+    }
+})
 
 
 
@@ -68,22 +83,22 @@ let chekwinner = () => {
         let valu2 = allbtn[pettern[1]].innerText;
         let valu3 = allbtn[pettern[2]].innerText;
 
-        console.log(valu1,valu2,valu3);
+        console.log(valu1, valu2, valu3);
         if (valu1 != "" & valu2 != "" && valu3 != "") {
             if (valu1 === valu2 && valu2 === valu3) {
                 // console.log("winner")
                 sowwintex(valu1)
                 allbtndeseble()
-                
+
             }
         }
-        
+
     }
 }
 
 // disbale btn after winner
 let allbtndeseble = () => {
-    for(let dbtn of allbtn){
+    for (let dbtn of allbtn) {
         dbtn.disabled = true;
         hidegaem.classList.add("hide");
         dbtn.innerText = "";
@@ -91,7 +106,7 @@ let allbtndeseble = () => {
 }
 
 let allanebale = () => {
-    for(let anbtn of allbtn){
+    for (let anbtn of allbtn) {
         anbtn.disabled = false;
         hidegaem.classList.remove("hide");
     }
@@ -100,12 +115,12 @@ let allanebale = () => {
 let sowwintex = (winev) => {
     winh3.innerText = `winner is "${winev}"`
     windiv.classList.remove("hide")
-  
-  
+
+
 
 }
 
 
-resetgaem.addEventListener("click" , reset);
-newgame.addEventListener("click" , reset)
+// resetgaem.addEventListener("click" , restinggame);
+newgame.addEventListener("click", reset)
 
